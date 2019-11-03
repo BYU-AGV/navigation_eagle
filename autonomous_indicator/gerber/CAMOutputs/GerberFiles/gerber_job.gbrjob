@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-11-03T17:28:57Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "indicator"
+        },
+        "Owner": "Ben Brenkman <justbrenkman@gmail.com>",
+        "Size": {
+            "X": 61.0616,
+            "Y": 61.0616
+        }
+    }
+}

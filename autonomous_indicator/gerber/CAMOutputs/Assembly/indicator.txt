@@ -1,0 +1,7 @@
+Partlist exported from C:/Users/justb/Documents/EAGLE/projects/navigation_eagle/autonomous_indicator/indicator.sch at 11/3/2019 10:28 AM
+
+Qty Value         Device                    Package   Parts                                             Description                                                                                                     PROD_ID   VALUE        
+12  0.1uF         0.1UF-0603-25V-(+80/-20%) 0603      C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12 0.1µF ceramic capacitors                                                                                        CAP-00810 0.1uF        
+1   455-1750-1-ND CONN_03                   1X03      J1                                                Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections XXX-00000 455-1750-1-ND
+2   STAND-OFF     STAND-OFF                 STAND-OFF H1, H2                                            Stand Off                                                                                                                              
+12  WS2812B       WS2812B                   WS2812B   D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12 WS2812B SMD addressable RGB LED                                                                                 DIO-12503 WS2812B      
