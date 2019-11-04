@@ -3207,6 +3207,27 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 </device>
 </devices>
 </deviceset>
+<deviceset name="0.33UF/330NF" prefix="C">
+<description>&lt;h3&gt;0.33µF/330nF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0805-50V-10%" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08469"/>
+<attribute name="VALUE" value="0.33µF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-IC-Power">
@@ -3554,11 +3575,11 @@ Spark Fun Electronics SKU : COM-00107</description>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="12V" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C7" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
-<part name="C8" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="12V" device=""/>
 <part name="U1" library="SparkFun-IC-Power" deviceset="V_REG_78XX" device="-TO-220"/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="C7" library="SparkFun-Capacitors" deviceset="0.33UF/330NF" device="-0805-50V-10%" value="0.33µF"/>
+<part name="C8" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -3700,14 +3721,6 @@ Spark Fun Electronics SKU : COM-00107</description>
 <instance part="GND10" gate="1" x="88.9" y="116.84" smashed="yes">
 <attribute name="VALUE" x="88.9" y="116.586" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C7" gate="G$1" x="78.74" y="127" smashed="yes" rot="R180">
-<attribute name="NAME" x="77.216" y="124.079" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="77.216" y="129.159" size="1.778" layer="96" font="vector" rot="R180"/>
-</instance>
-<instance part="C8" gate="G$1" x="101.6" y="124.46" smashed="yes">
-<attribute name="NAME" x="103.124" y="127.381" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="103.124" y="122.301" size="1.778" layer="96" font="vector"/>
-</instance>
 <instance part="SUPPLY10" gate="G$1" x="71.12" y="132.08" smashed="yes" rot="R90">
 <attribute name="VALUE" x="68.326" y="132.08" size="1.778" layer="96" rot="R90" align="bottom-center"/>
 </instance>
@@ -3717,6 +3730,14 @@ Spark Fun Electronics SKU : COM-00107</description>
 </instance>
 <instance part="SUPPLY9" gate="G$1" x="109.22" y="132.08" smashed="yes" rot="R270">
 <attribute name="VALUE" x="112.014" y="132.08" size="1.778" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="C7" gate="G$1" x="78.74" y="124.46" smashed="yes">
+<attribute name="NAME" x="80.264" y="127.381" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="80.264" y="122.301" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C8" gate="G$1" x="101.6" y="124.46" smashed="yes">
+<attribute name="NAME" x="103.124" y="127.381" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="103.124" y="122.301" size="1.778" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -3743,13 +3764,13 @@ Spark Fun Electronics SKU : COM-00107</description>
 <pinref part="SUPPLY8" gate="G$1" pin="12V"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="129.54" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91"/>
 <junction x="78.74" y="132.08"/>
 <pinref part="SUPPLY10" gate="G$1" pin="12V"/>
 <pinref part="U1" gate="G$1" pin="IN"/>
+<pinref part="C7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -3877,13 +3898,13 @@ Spark Fun Electronics SKU : COM-00107</description>
 <segment>
 <wire x1="88.9" y1="124.46" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="121.92" x2="88.9" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="121.92" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
 <junction x="88.9" y="121.92"/>
-<pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="121.92" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -3932,12 +3953,12 @@ Spark Fun Electronics SKU : COM-00107</description>
 </segment>
 <segment>
 <wire x1="96.52" y1="132.08" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="129.54" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="OUT"/>
 <wire x1="101.6" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
 <junction x="101.6" y="132.08"/>
 <pinref part="SUPPLY9" gate="G$1" pin="5V"/>
+<pinref part="C8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">

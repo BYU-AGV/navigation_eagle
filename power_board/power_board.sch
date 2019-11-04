@@ -111,6 +111,11 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-02" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="DrillLegend_01-15" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="147" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="148" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -1119,6 +1124,79 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.635" y1="0" x2="0.15875" y2="0.47625" width="0.2032" layer="51"/>
 <wire x1="0.635" y1="0" x2="0.15875" y2="-0.47625" width="0.2032" layer="51"/>
 </package>
+<package name="PLCC-6-LED">
+<description>&lt;h3&gt;PLCC-6-LED&lt;/h3&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 6&lt;/li&gt;
+&lt;li&gt;Size: 3.2*2.8*1.39mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://www.osram-os.com/Graphics/XPic9/00134830_0.pdf"&gt;LTRB GFSF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device:
+&lt;ul&gt;&lt;li&gt;RGB-LED-PLCC&lt;/li&gt;</description>
+<wire x1="1.5" y1="1.6" x2="1.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.6" x2="-1.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.6" x2="-1.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="1.6" x2="1.5" y2="1.6" width="0.127" layer="51"/>
+<circle x="-1.3" y="1.3" radius="0.1" width="0" layer="51"/>
+<smd name="CB" x="-1.475" y="1.1" dx="1.3" dy="0.7" layer="1"/>
+<smd name="CR" x="-1.475" y="0" dx="1.3" dy="0.7" layer="1"/>
+<smd name="CG" x="-1.475" y="-1.1" dx="1.3" dy="0.7" layer="1"/>
+<smd name="AG" x="1.475" y="-1.1" dx="1.3" dy="0.7" layer="1"/>
+<smd name="AR" x="1.475" y="0" dx="1.3" dy="0.7" layer="1"/>
+<smd name="AB" x="1.475" y="1.1" dx="1.3" dy="0.7" layer="1"/>
+<wire x1="-1.4" y1="1.7" x2="1.4" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-1.7" x2="-1.4" y2="-1.7" width="0.2032" layer="21"/>
+<circle x="-0.4" y="1.1" radius="0.1" width="0.2032" layer="21"/>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<circle x="-1.778" y="1.905" radius="0.1" width="0.2032" layer="21"/>
+</package>
+<package name="LED-TRICOLOR-5050">
+<description>&lt;h3&gt;5050 SMD RGB LED&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Specifications:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;Pin count: 6&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.6mm&lt;/li&gt;
+&lt;li&gt;Area: 5.0mm x 5.mm&lt;/li&gt;
+&lt;li&gt;Thickness: 2.6mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/LED/5060BRG4.pdf"&gt; 5060BRG4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Example device(s):&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;LED-RGB&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="-0.7" y="2" radius="0.2236" width="0" layer="21"/>
+<circle x="0" y="0" radius="2" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2" width="0.127" layer="51"/>
+<wire x1="-1.8" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-1" y1="2.5" x2="1" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-2.5" x2="1" y2="-2.5" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="0.7" x2="-2.5" y2="0.9" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="-0.9" x2="-2.5" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-0.9" x2="2.5" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="0.7" x2="2.5" y2="0.9" width="0.2032" layer="21"/>
+<wire x1="0.254" y1="-0.127" x2="0.254" y2="0.127" width="0.2032" layer="21"/>
+<wire x1="0.254" y1="0.127" x2="0.508" y2="0.127" width="0.2032" layer="21"/>
+<wire x1="0.508" y1="0.127" x2="0.508" y2="-0.127" width="0.2032" layer="21"/>
+<wire x1="0.508" y1="-0.127" x2="0.254" y2="-0.127" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="2" x2="-1.8" y2="2.5" width="0.127" layer="51"/>
+<rectangle x1="1.7" y1="-0.45" x2="2.7" y2="0.45" layer="51"/>
+<rectangle x1="1.7" y1="1.15" x2="2.7" y2="2.05" layer="51"/>
+<rectangle x1="1.7" y1="-2.05" x2="2.7" y2="-1.15" layer="51"/>
+<rectangle x1="-2.7" y1="1.15" x2="-1.7" y2="2.05" layer="51" rot="R180"/>
+<rectangle x1="-2.7" y1="-0.45" x2="-1.7" y2="0.45" layer="51" rot="R180"/>
+<rectangle x1="-2.7" y1="-2.05" x2="-1.7" y2="-1.15" layer="51" rot="R180"/>
+<smd name="1" x="-2.4" y="1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
+<smd name="2" x="-2.4" y="0" dx="2" dy="1.1" layer="1" roundness="100"/>
+<smd name="3" x="-2.4" y="-1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
+<smd name="4" x="2.4" y="-1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
+<smd name="5" x="2.4" y="0" dx="2" dy="1.1" layer="1" roundness="100"/>
+<smd name="6" x="2.4" y="1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<circle x="-2.2875" y="2.635" radius="0.127" width="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -1145,6 +1223,46 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
+</symbol>
+<symbol name="LED-RGB-INDV">
+<description>&lt;h3&gt;RGB LED - No Common&lt;/h3&gt;
+&lt;p&gt;6 pin RGB LED&lt;/p&gt;</description>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.27" x2="-0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-0.508" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="1.27" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="-0.508" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-1.27" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.032" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-1.778" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="1.778" x2="-0.508" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="3.048" x2="-0.508" y2="4.318" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="4.318" x2="0.762" y2="3.048" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.048" x2="-0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.778" x2="0.762" y2="3.048" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.048" x2="0.762" y2="4.318" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.048" x2="2.032" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="3.048" x2="-1.778" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-4.318" x2="-0.508" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-3.048" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0.762" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.048" x2="-0.508" y2="-4.318" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-4.318" x2="0.762" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.048" x2="0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.048" x2="2.032" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-3.048" x2="-1.778" y2="-3.048" width="0.254" layer="94"/>
+<pin name="BLU-A" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="BLU-C" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GRN-A" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="GRN-C" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="RED-A" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="RED-C" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<text x="0" y="5.715" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.778" layer="95" font="vector" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1211,6 +1329,57 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09912" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-RGB" prefix="D" uservalue="yes">
+<description>&lt;h3&gt;LED-RGB &lt;/h3&gt;
+6 pin RGB LED (no common connector)
+&lt;p&gt;
+
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt;&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt; PLCC-6&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;LED-TRICOLOR-5050&lt;/b&gt; - No built-in IC&lt;/li&gt;
+&lt;ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12651”&gt;Digital Sandbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10866”&gt; LED- SMD RGB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED-RGB-INDV" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PLCC-6" package="PLCC-6-LED">
+<connects>
+<connect gate="G$1" pin="BLU-A" pad="AB"/>
+<connect gate="G$1" pin="BLU-C" pad="CB"/>
+<connect gate="G$1" pin="GRN-A" pad="AG"/>
+<connect gate="G$1" pin="GRN-C" pad="CG"/>
+<connect gate="G$1" pin="RED-A" pad="AR"/>
+<connect gate="G$1" pin="RED-C" pad="CR"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-12113" constant="no"/>
+<attribute name="VALUE" value="RGB" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="NO_IC" package="LED-TRICOLOR-5050">
+<connects>
+<connect gate="G$1" pin="BLU-A" pad="3"/>
+<connect gate="G$1" pin="BLU-C" pad="4"/>
+<connect gate="G$1" pin="GRN-A" pad="1"/>
+<connect gate="G$1" pin="GRN-C" pad="6"/>
+<connect gate="G$1" pin="RED-A" pad="2"/>
+<connect gate="G$1" pin="RED-C" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-10298" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -4157,6 +4326,307 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="ubloxLib">
+<packages>
+<package name="NINA112-42">
+<description>&lt;b&gt;NINA-B111:&lt;/b&gt; LGA Package 42 Pin&lt;p&gt;
+&lt;a href="http://www.u-blox.com"&gt;u-blox.com&lt;/a&gt;</description>
+<text x="-5.3" y="6.2" size="1.5" layer="25">&gt;NAME</text>
+<text x="-5.3" y="-7.6" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-6.3" y="-6" radius="0.25" width="0.75" layer="21"/>
+<wire x1="-5.3" y1="5" x2="-5.3" y2="-5" width="0.15" layer="21"/>
+<wire x1="-5.3" y1="-5" x2="8.7" y2="-5" width="0.15" layer="21"/>
+<wire x1="8.7" y1="-5" x2="8.7" y2="5" width="0.15" layer="21"/>
+<wire x1="8.7" y1="5" x2="-5.3" y2="5" width="0.15" layer="21"/>
+<smd name="16" x="4.5" y="4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="17" x="3.5" y="4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="18" x="2.5" y="4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="19" x="1.5" y="4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="20" x="0.5" y="4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="21" x="-0.5" y="4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="22" x="-1.5" y="4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="23" x="-2.5" y="4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="24" x="-3.5" y="4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="25" x="-4.5" y="4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="10" x="4.5" y="-4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="9" x="3.5" y="-4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="8" x="2.5" y="-4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="7" x="1.5" y="-4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="6" x="0.5" y="-4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="5" x="-0.5" y="-4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="4" x="-1.5" y="-4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="3" x="-2.5" y="-4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="2" x="-3.5" y="-4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="1" x="-4.5" y="-4.125" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R90"/>
+<smd name="26" x="-4.425" y="2" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R180"/>
+<smd name="27" x="-4.425" y="1" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R180"/>
+<smd name="28" x="-4.425" y="0" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R180"/>
+<smd name="29" x="-4.425" y="-1" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R180"/>
+<smd name="30" x="-4.425" y="-2" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R180"/>
+<wire x1="-6.3" y1="6" x2="-6.3" y2="-6" width="0.1" layer="39"/>
+<wire x1="-6.3" y1="-6" x2="9.7" y2="-6" width="0.1" layer="39"/>
+<wire x1="9.7" y1="-6" x2="9.7" y2="6" width="0.1" layer="39"/>
+<wire x1="9.7" y1="6" x2="-6.3" y2="6" width="0.1" layer="39"/>
+<smd name="37" x="0.575" y="-0.575" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<polygon width="0" layer="29">
+<vertex x="0.225" y="-0.245"/>
+<vertex x="0.225" y="-0.905" curve="90"/>
+<vertex x="0.245" y="-0.925"/>
+<vertex x="0.905" y="-0.925" curve="90"/>
+<vertex x="0.925" y="-0.905"/>
+<vertex x="0.925" y="-0.245" curve="90"/>
+<vertex x="0.905" y="-0.225"/>
+<vertex x="0.245" y="-0.225" curve="90"/>
+</polygon>
+<smd name="34" x="-0.575" y="-0.575" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<smd name="31" x="-1.725" y="-0.575" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<smd name="40" x="1.725" y="-0.575" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<smd name="41" x="1.725" y="0.575" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<smd name="38" x="0.575" y="0.575" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<smd name="35" x="-0.575" y="0.575" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<smd name="32" x="-1.725" y="0.575" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<smd name="36" x="-0.575" y="1.725" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<smd name="33" x="-0.575" y="-1.725" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<smd name="42" x="1.725" y="1.725" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<smd name="39" x="1.725" y="-1.725" dx="0.7" dy="0.7" layer="1" roundness="5" stop="no" thermals="no"/>
+<polygon width="0" layer="29">
+<vertex x="1.375" y="-0.245"/>
+<vertex x="1.375" y="-0.905" curve="90"/>
+<vertex x="1.395" y="-0.925"/>
+<vertex x="2.055" y="-0.925" curve="90"/>
+<vertex x="2.075" y="-0.905"/>
+<vertex x="2.075" y="-0.245" curve="90"/>
+<vertex x="2.055" y="-0.225"/>
+<vertex x="1.395" y="-0.225" curve="90"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="-0.925" y="-0.245"/>
+<vertex x="-0.925" y="-0.905" curve="90"/>
+<vertex x="-0.905" y="-0.925"/>
+<vertex x="-0.245" y="-0.925" curve="90"/>
+<vertex x="-0.225" y="-0.905"/>
+<vertex x="-0.225" y="-0.245" curve="90"/>
+<vertex x="-0.245" y="-0.225"/>
+<vertex x="-0.905" y="-0.225" curve="90"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="-2.075" y="-0.245"/>
+<vertex x="-2.075" y="-0.905" curve="90"/>
+<vertex x="-2.055" y="-0.925"/>
+<vertex x="-1.395" y="-0.925" curve="90"/>
+<vertex x="-1.375" y="-0.905"/>
+<vertex x="-1.375" y="-0.245" curve="90"/>
+<vertex x="-1.395" y="-0.225"/>
+<vertex x="-2.055" y="-0.225" curve="90"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="-2.075" y="0.905"/>
+<vertex x="-2.075" y="0.245" curve="90"/>
+<vertex x="-2.055" y="0.225"/>
+<vertex x="-1.395" y="0.225" curve="90"/>
+<vertex x="-1.375" y="0.245"/>
+<vertex x="-1.375" y="0.905" curve="90"/>
+<vertex x="-1.395" y="0.925"/>
+<vertex x="-2.055" y="0.925" curve="90"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="-0.925" y="0.905"/>
+<vertex x="-0.925" y="0.245" curve="90"/>
+<vertex x="-0.905" y="0.225"/>
+<vertex x="-0.245" y="0.225" curve="90"/>
+<vertex x="-0.225" y="0.245"/>
+<vertex x="-0.225" y="0.905" curve="90"/>
+<vertex x="-0.245" y="0.925"/>
+<vertex x="-0.905" y="0.925" curve="90"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="0.225" y="0.905"/>
+<vertex x="0.225" y="0.245" curve="90"/>
+<vertex x="0.245" y="0.225"/>
+<vertex x="0.905" y="0.225" curve="90"/>
+<vertex x="0.925" y="0.245"/>
+<vertex x="0.925" y="0.905" curve="90"/>
+<vertex x="0.905" y="0.925"/>
+<vertex x="0.245" y="0.925" curve="90"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="1.375" y="0.905"/>
+<vertex x="1.375" y="0.245" curve="90"/>
+<vertex x="1.395" y="0.225"/>
+<vertex x="2.055" y="0.225" curve="90"/>
+<vertex x="2.075" y="0.245"/>
+<vertex x="2.075" y="0.905" curve="90"/>
+<vertex x="2.055" y="0.925"/>
+<vertex x="1.395" y="0.925" curve="90"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="-0.925" y="2.055"/>
+<vertex x="-0.925" y="1.395" curve="90"/>
+<vertex x="-0.905" y="1.375"/>
+<vertex x="-0.245" y="1.375" curve="90"/>
+<vertex x="-0.225" y="1.395"/>
+<vertex x="-0.225" y="2.055" curve="90"/>
+<vertex x="-0.245" y="2.075"/>
+<vertex x="-0.905" y="2.075" curve="90"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="-0.925" y="-1.395"/>
+<vertex x="-0.925" y="-2.055" curve="90"/>
+<vertex x="-0.905" y="-2.075"/>
+<vertex x="-0.245" y="-2.075" curve="90"/>
+<vertex x="-0.225" y="-2.055"/>
+<vertex x="-0.225" y="-1.395" curve="90"/>
+<vertex x="-0.245" y="-1.375"/>
+<vertex x="-0.905" y="-1.375" curve="90"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="1.375" y="2.055"/>
+<vertex x="1.375" y="1.395" curve="90"/>
+<vertex x="1.395" y="1.375"/>
+<vertex x="2.055" y="1.375" curve="90"/>
+<vertex x="2.075" y="1.395"/>
+<vertex x="2.075" y="2.055" curve="90"/>
+<vertex x="2.055" y="2.075"/>
+<vertex x="1.395" y="2.075" curve="90"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="1.375" y="-1.395"/>
+<vertex x="1.375" y="-2.055" curve="90"/>
+<vertex x="1.395" y="-2.075"/>
+<vertex x="2.055" y="-2.075" curve="90"/>
+<vertex x="2.075" y="-2.055"/>
+<vertex x="2.075" y="-1.395" curve="90"/>
+<vertex x="2.055" y="-1.375"/>
+<vertex x="1.395" y="-1.375" curve="90"/>
+</polygon>
+<smd name="15" x="4.425" y="2" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R180"/>
+<smd name="14" x="4.425" y="1" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R180"/>
+<smd name="13" x="4.425" y="0" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R180"/>
+<smd name="12" x="4.425" y="-1" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R180"/>
+<smd name="11" x="4.425" y="-2" dx="1.15" dy="0.7" layer="1" roundness="15" rot="R180"/>
+<wire x1="8.2" y1="5.5" x2="9.2" y2="5.5" width="0.2" layer="29"/>
+<wire x1="9.2" y1="5.5" x2="9.2" y2="4.5" width="0.2" layer="29"/>
+<wire x1="-4.8" y1="-5.5" x2="-5.8" y2="-5.5" width="0.2" layer="29"/>
+<wire x1="-5.8" y1="-5.5" x2="-5.8" y2="-4.5" width="0.2" layer="29"/>
+<wire x1="0" y1="0.5" x2="0" y2="-0.5" width="0.05" layer="23"/>
+<wire x1="0.5" y1="0" x2="-0.5" y2="0" width="0.05" layer="23"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NINA-B112">
+<description>&lt;b&gt;LILY-W131:&lt;/b&gt; Electrical Symbol&lt;p&gt;
+&lt;a href="http://www.u-blox.com"&gt;u-blox.com&lt;/a&gt;</description>
+<wire x1="-25.4" y1="40.64" x2="-25.4" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-43.18" x2="25.4" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-43.18" x2="25.4" y2="40.64" width="0.254" layer="94"/>
+<wire x1="25.4" y1="40.64" x2="-25.4" y2="40.64" width="0.254" layer="94"/>
+<text x="-5.08" y="2.54" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-25.4" y="43.18" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<pin name="GND@1" x="-20.32" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@2" x="-17.78" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@3" x="-15.24" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@4" x="-12.7" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@5" x="-10.16" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@6" x="-7.62" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@7" x="-5.08" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@8" x="-2.54" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@9" x="0" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@10" x="2.54" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@11" x="5.08" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@12" x="7.62" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@13" x="10.16" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@14" x="12.7" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@15" x="15.24" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@16" x="17.78" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@17" x="20.32" y="-48.26" length="middle" direction="pwr" rot="R90"/>
+<pin name="!SPI0_CS1!" x="-30.48" y="22.86" length="middle" direction="out"/>
+<pin name="!SPI0_CS0" x="-30.48" y="25.4" length="middle"/>
+<pin name="SPI0_MISO" x="-30.48" y="27.94" length="middle"/>
+<pin name="SPI0_MOSI" x="-30.48" y="30.48" length="middle"/>
+<pin name="SPI0_CLK" x="-30.48" y="33.02" length="middle"/>
+<pin name="GPIO_7/BOOT" x="-30.48" y="-12.7" length="middle"/>
+<pin name="SWO" x="30.48" y="-27.94" length="middle" direction="out" rot="R180"/>
+<pin name="VCC_IO" x="-5.08" y="45.72" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC" x="5.08" y="45.72" length="middle" direction="pwr" rot="R270"/>
+<pin name="SWDCLK" x="30.48" y="-22.86" length="middle" direction="in" rot="R180"/>
+<pin name="NC" x="30.48" y="35.56" length="middle" direction="nc" rot="R180"/>
+<pin name="SWDIO" x="30.48" y="-25.4" length="middle" rot="R180"/>
+<pin name="GPIO_16" x="-30.48" y="-15.24" length="middle"/>
+<pin name="GPIO_17" x="-30.48" y="-17.78" length="middle"/>
+<pin name="GPIO_18" x="-30.48" y="-20.32" length="middle"/>
+<pin name="!RESET" x="30.48" y="-15.24" length="middle" direction="in" rot="R180"/>
+<pin name="UART_RTS" x="-30.48" y="7.62" length="middle"/>
+<pin name="UART_CTS" x="-30.48" y="5.08" length="middle"/>
+<pin name="UART_TXD" x="-30.48" y="12.7" length="middle"/>
+<pin name="UART_RXD" x="-30.48" y="10.16" length="middle"/>
+<pin name="I2C_SDA" x="-30.48" y="-5.08" length="middle"/>
+<pin name="I2C_SCL" x="-30.48" y="-2.54" length="middle"/>
+<pin name="GPIO_27" x="-30.48" y="-22.86" length="middle"/>
+<pin name="GPIO_28/NFC1" x="-30.48" y="-25.4" length="middle"/>
+<pin name="GPIO_29/NFC2" x="-30.48" y="-27.94" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NINA-B112" prefix="U">
+<description>&lt;b&gt;NINA-B112: &lt;/b&gt;BLE stand-alone module&lt;p&gt;
+&lt;a href="http://www.u-blox.com"&gt;u-blox.com&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="NINA-B112" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NINA112-42">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="19"/>
+<connect gate="G$1" pin="!SPI0_CS0" pad="2"/>
+<connect gate="G$1" pin="!SPI0_CS1!" pad="1"/>
+<connect gate="G$1" pin="GND@1" pad="6"/>
+<connect gate="G$1" pin="GND@10" pad="35"/>
+<connect gate="G$1" pin="GND@11" pad="36"/>
+<connect gate="G$1" pin="GND@12" pad="37"/>
+<connect gate="G$1" pin="GND@13" pad="38"/>
+<connect gate="G$1" pin="GND@14" pad="39"/>
+<connect gate="G$1" pin="GND@15" pad="40"/>
+<connect gate="G$1" pin="GND@16" pad="41"/>
+<connect gate="G$1" pin="GND@17" pad="42"/>
+<connect gate="G$1" pin="GND@2" pad="12"/>
+<connect gate="G$1" pin="GND@3" pad="14"/>
+<connect gate="G$1" pin="GND@4" pad="26"/>
+<connect gate="G$1" pin="GND@5" pad="30"/>
+<connect gate="G$1" pin="GND@6" pad="31"/>
+<connect gate="G$1" pin="GND@7" pad="32"/>
+<connect gate="G$1" pin="GND@8" pad="33"/>
+<connect gate="G$1" pin="GND@9" pad="34"/>
+<connect gate="G$1" pin="GPIO_16" pad="16"/>
+<connect gate="G$1" pin="GPIO_17" pad="17"/>
+<connect gate="G$1" pin="GPIO_18" pad="18"/>
+<connect gate="G$1" pin="GPIO_27" pad="27"/>
+<connect gate="G$1" pin="GPIO_28/NFC1" pad="28"/>
+<connect gate="G$1" pin="GPIO_29/NFC2" pad="29"/>
+<connect gate="G$1" pin="GPIO_7/BOOT" pad="7"/>
+<connect gate="G$1" pin="I2C_SCL" pad="25"/>
+<connect gate="G$1" pin="I2C_SDA" pad="24"/>
+<connect gate="G$1" pin="NC" pad="13"/>
+<connect gate="G$1" pin="SPI0_CLK" pad="5"/>
+<connect gate="G$1" pin="SPI0_MISO" pad="3"/>
+<connect gate="G$1" pin="SPI0_MOSI" pad="4"/>
+<connect gate="G$1" pin="SWDCLK" pad="11"/>
+<connect gate="G$1" pin="SWDIO" pad="15"/>
+<connect gate="G$1" pin="SWO" pad="8"/>
+<connect gate="G$1" pin="UART_CTS" pad="21"/>
+<connect gate="G$1" pin="UART_RTS" pad="20"/>
+<connect gate="G$1" pin="UART_RXD" pad="23"/>
+<connect gate="G$1" pin="UART_TXD" pad="22"/>
+<connect gate="G$1" pin="VCC" pad="10"/>
+<connect gate="G$1" pin="VCC_IO" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4212,6 +4682,8 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <part name="C7" library="SparkFun-Capacitors" deviceset="0.33UF/330NF" device="-0805-50V-10%" value="0.33µF"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 <part name="U2" library="SparkFun-IC-Microcontroller" deviceset="ATSAMD21G" device="-A"/>
+<part name="U3" library="ubloxLib" deviceset="NINA-B112" device=""/>
+<part name="D3" library="SparkFun-LED" deviceset="LED-RGB" device="PLCC-6" value="RGB"/>
 </parts>
 <sheets>
 <sheet>
@@ -4374,6 +4846,14 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <instance part="U2" gate="G$1" x="271.78" y="134.62" smashed="yes">
 <attribute name="NAME" x="241.3" y="180.594" size="1.778" layer="95"/>
 <attribute name="VALUE" x="241.3" y="101.346" size="1.778" layer="96" align="top-left"/>
+</instance>
+<instance part="U3" gate="G$1" x="175.26" y="142.24" smashed="yes">
+<attribute name="VALUE" x="170.18" y="144.78" size="1.778" layer="96" align="top-left"/>
+<attribute name="NAME" x="149.86" y="185.42" size="1.778" layer="95" align="top-left"/>
+</instance>
+<instance part="D3" gate="G$1" x="81.28" y="170.18" smashed="yes">
+<attribute name="NAME" x="81.28" y="175.895" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="81.28" y="164.465" size="1.778" layer="95" font="vector" align="top-center"/>
 </instance>
 </instances>
 <busses>
