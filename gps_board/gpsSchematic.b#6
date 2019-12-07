@@ -3162,7 +3162,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="H3" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="19.05" y="76.2" smashed="yes"/>
+<element name="GND" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="19.05" y="76.2" smashed="yes"/>
 <element name="H4" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="63.5" y="76.2" smashed="yes"/>
 <element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="56.515" y="38.735" smashed="yes"/>
 <element name="FD3" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="17.145" y="78.105" smashed="yes"/>
@@ -3319,7 +3319,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="66.48266875" y="55.3773" size="1.2708" layer="27" rot="R90"/>
 </element>
 <element name="JP4" library="pinhead" package="1X02" value="" x="24.384" y="63.627" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.5552" y="61.0108" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="27.559" y="61.087" size="1.27" layer="27" rot="R90"/>
 </element>
 </elements>
@@ -3606,11 +3605,11 @@ design rules under a new name.</description>
 <wire x1="20.1168" y1="59.1312" x2="20.1168" y2="65.8368" width="0.254" layer="16"/>
 <wire x1="20.1168" y1="65.8368" x2="22.86" y2="68.58" width="0.254" layer="16"/>
 <wire x1="22.86" y1="68.58" x2="24.765" y2="68.58" width="0.254" layer="16"/>
-<wire x1="24.511" y1="65.54093125" x2="23.7617" y2="66.29023125" width="0.1524" layer="1"/>
-<wire x1="23.7617" y1="66.29023125" x2="23.7617" y2="67.5767" width="0.1524" layer="1"/>
-<wire x1="23.7617" y1="67.5767" x2="24.765" y2="68.58" width="0.1524" layer="1"/>
 <contactref element="JP4" pad="2"/>
-<wire x1="24.511" y1="65.54093125" x2="24.384" y2="64.897" width="0" layer="19" extent="1-1"/>
+<wire x1="24.765" y1="68.58" x2="23.7109" y2="67.5259" width="0.254" layer="1"/>
+<wire x1="23.7109" y1="67.5259" x2="23.7109" y2="66.2691875" width="0.254" layer="1"/>
+<wire x1="24.384" y1="65.5960875" x2="24.384" y2="64.897" width="0.254" layer="1"/>
+<wire x1="23.7109" y1="66.2691875" x2="24.384" y2="65.5960875" width="0.254" layer="1"/>
 </signal>
 <signal name="INT">
 <contactref element="U1" pad="19"/>
@@ -3740,6 +3739,16 @@ design rules under a new name.</description>
 </mfgpreviewcolors>
 <errors>
 <approved hash="4,14,093842d3e41267c6"/>
+<approved hash="19,1,716554e3ed86aec3"/>
+<approved hash="19,1,99edf9f5febbda00"/>
+<approved hash="21,19,340c34fdc8ffcef0"/>
+<approved hash="21,19,af40d740d542d5be"/>
+<approved hash="21,19,afd2ae2cacd352d0"/>
+<approved hash="21,19,26c524395a39a63b"/>
+<approved hash="21,19,8045824702470045"/>
+<approved hash="21,19,e4cee6cce6cce4ce"/>
+<approved hash="21,19,38d258d058d25932"/>
+<approved hash="21,19,9a1b9ae598166619"/>
 </errors>
 </board>
 </drawing>
